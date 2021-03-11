@@ -1,0 +1,19 @@
+.btn__white {
+    color: #007bff !important;
+    background-color: #fff !important;
+    border-color: #007bff !important;
+    &:hover {
+        color: #0a58ca !important;
+        border-color: #0a58ca !important;
+    }
+}
+
+.btn__primary {
+    color: #fff !important;
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+    &:hover {
+        background-color: #0b5ed7 !important;
+        border-color: #0a58ca !important;
+    }
+}

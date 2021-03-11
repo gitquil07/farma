@@ -1,0 +1,20 @@
+.global__filter {
+    display: flex;
+    align-items: center;
+
+    .label {
+        margin: 0;
+        margin-right: 8px;
+    }
+
+    .global__filter__input{
+        height: 32px;
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+        background: #fff;
+        padding: 3px 10px;
+        &:focus{
+            box-shadow: 0 0 6px #ced4da;
+        }
+    }
+}

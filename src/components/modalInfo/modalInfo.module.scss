@@ -1,0 +1,43 @@
+.modalDialog{
+    width: 90%;
+
+    @media (min-width: 576px) {
+        max-width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+}
+
+.modal__content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.header{
+    border-bottom: 2px solid rgb(67, 65, 65);
+}
+.single{
+    h6{
+        font-weight: 700;
+    }
+    p{
+        font-weight: 700;
+        color: #bbb;
+    }
+}
+.group{
+    p{
+        color: #333;
+        font-size: 17px;
+        div{
+            flex-wrap: nowrap;
+        }
+    }
+    h6{
+        color: #000;
+        font-weight: 700;
+        p{
+            display: inline-block;
+        }
+    }
+}

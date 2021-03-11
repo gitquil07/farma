@@ -1,0 +1,106 @@
+.home__page {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #f8f9fe;
+    min-height: calc(100vh - 75px);
+
+    .cards__block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card {
+            position: relative;
+            width: 19%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #bbb;
+
+            &__icon {
+                position: absolute;
+                right: 3px;
+                background-color: #3A7AFE;
+                color: #fff;
+                border-radius: 50%;
+            }
+
+            h5 {
+                font-weight: 600;
+            }
+            .numbs {
+                margin-bottom: 0;
+                font-weight: 600;
+                color: #3A7AFE;
+                text-align: right;
+            }
+
+            @media (max-width: 1200px) {
+                width: 24%;
+            }
+
+            @media (max-width: 990px) {
+                width: 48%;
+            }
+
+            @media (max-width: 770px) {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .static__chart {
+        width: 70%;
+        margin: 0 auto;
+
+        @media (max-width: 770px) {
+            width: 100%;
+        }
+    }
+
+    .news {
+        position: relative;
+
+        &__block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .news__item {
+                width: 48%;
+                padding: 10px;
+                background-color: #fff;
+                overflow: hidden;
+                box-shadow: 0 0 10px #aaa;
+
+                &__date {
+                    margin: 0;
+                    text-align: right;
+                    font-size: 14px;
+                    color: #999;
+                }
+
+                @media (max-width: 770px) {
+                    & {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .news__img {
+                height: 200px;
+                object-fit: cover;
+            }
+
+            
+        }
+
+        &__pagin {
+            text-align: center;
+        }
+    }
+}

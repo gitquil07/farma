@@ -1,0 +1,222 @@
+.sideBar {
+    font-family: 'Poppins', sans-serif;
+    z-index: 6;
+    position: fixed !important;
+    width: 310px;
+    min-height: 100vh;
+    background-color: #3A7AFE;
+
+    .sideBar__head {
+        height: 72px;
+        display: flex;
+        align-items: center;
+        padding-right: 6px;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: .5);
+
+        .sideBar__logo {
+            width: 60px;
+            margin-left: 1px;
+            text-align: center;
+
+            &>img {
+                width: 46px;
+                height: 46px;
+            }
+        }
+
+        .sideBar__name {
+            width: 250px;
+            text-align: center;
+            color: #fff;
+
+            h4 {
+                margin: 0;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .sideBar__body {
+        margin-top: 10px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        height: 100vh;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        .menu__text {
+            margin-top: 5px;
+            margin-bottom: 0;
+            margin-left: 10px;
+            color: #fff;
+            font-size: 12px;
+            opacity: .6;
+        }
+
+        .nav__item__acc {
+            margin-top: 20px;
+        }
+
+        .nav__item {
+            cursor: pointer;
+            display: flex;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #fff;
+            opacity: .8;
+
+            &:nth-child(0) {
+                margin-top: 5px;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+
+            .sideBar__icon {
+                font-size: 19px;
+                width: 60px;
+                text-align: center;
+            }
+
+            .sideBar__text {
+                width: 250px;
+                padding-right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h4 {
+                    font-weight: 350;
+                    font-size: 18px;
+                    margin: 0;
+                    margin-left: -8px;
+                }
+            }
+
+            .nav__icon {
+                width: 30px;
+                margin: 0;
+            }
+        }
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+    }
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
+
+.chevr {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chevron {
+    cursor: pointer;
+    font-size: 15px !important;
+}
+
+.drop__items {
+    padding-left: 2px;
+    padding-right: 10px;
+    transition: all .2s linear;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    height: 0;
+    overflow: hidden;
+    color: #fff;
+
+
+    .ul {
+        margin-left: 10px;
+        list-style:none;
+
+        .link {
+            color: #fff;
+            text-decoration: none;
+
+            .li {
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                margin: 15px 0;
+                padding-left: 5px;
+                border-radius: 5px;
+                transition: all .2s linear;
+                cursor: pointer;
+                border: 1px solid transparent;
+                opacity: .8;
+    
+                &:hover {
+                    // background-color: #3A97FE;
+                    opacity: 1;
+                }
+                i {
+                    font-size: 10px;
+                    margin-bottom: 3px;
+                    margin-right: 8px;
+                    opacity: .5;
+                }
+                
+            }
+
+            // &:focus {
+            //    li { font-size: 14px; opacity: 1; }
+            // }
+        }
+
+        .active__link {
+            color: #fff;
+            opacity: 1 !important;
+        
+            .li {
+                opacity: 1;
+            }
+        }
+        
+    }
+
+    
+}
+.active_first{
+    .active__box{
+        .active__link{
+            color: #000;
+        }
+    }
+}
+.activeMed {
+    height: 435px;
+}
+
+.activeAnalyze {
+    height: 252px;
+}
+.activeProfil{
+    height: 75px;
+}
+.activeLeader {
+    height: 306px;
+}
+.activeAlso{
+    height: 125px;
+}
+.activeHelp{
+    height: 110px;
+}
+
+h1 {
+    font-size: 25px;
+}
+

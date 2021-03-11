@@ -1,0 +1,36 @@
+.body{
+    overflow: hidden;
+}
+.content_small, .content_large{
+    padding-left: 60px;
+    padding-top: 4.6rem;
+    @media (max-width: 770px) {
+        padding-left: 0px;
+    }
+}
+.content_large{
+    padding-left: 310px;
+    @media (max-width: 770px) {
+        padding-left: 0px;
+    }
+}
+.opacity_body{
+    overflow-y:visible;
+    position: absolute;
+    left: 310px;
+    width: calc(100% - 310px) !important;
+    z-index: 5000;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+.d_none{
+    display: none;
+}
+// .d_block{
+//     display: block;
+// }
+.small_body{
+    padding-top: 4.6rem;
+    width: 100%;
+}

@@ -1,0 +1,9 @@
+.btn__white {
+    color: #007bff !important;
+    background-color: #fff !important;
+    border-color: #007bff !important;
+    &:hover {
+        color: #0a58ca !important;
+        border-color: #0a58ca !important;
+    }
+}
